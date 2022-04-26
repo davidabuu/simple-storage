@@ -4,4 +4,7 @@ contract SimpleStorage {
     function store(uint256 _num) public {
         myNum = _num;
     }
+    function retrieve() public view returns(uint256){
+        return myNum;
+    }
 }
